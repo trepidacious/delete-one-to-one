@@ -1,0 +1,19 @@
+layout {
+	tab {	
+    	pane command="hx" borderless=true size="80%"
+    	pane split_direction="vertical" {
+        	pane command="bacon" {
+          	args "clippy"
+        	}
+    	}
+    	pane size=2 borderless=true {
+        	plugin location="zellij:status-bar"
+    	}
+	}
+	tab{
+		pane command="lazygit"
+    	pane size=2 borderless=true {
+        	plugin location="zellij:status-bar"
+    	}
+	}
+}
